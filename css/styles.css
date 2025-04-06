@@ -1,0 +1,378 @@
+/* === BASE === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* === HERO / INTRO === */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #1f1f1f, #121212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeInBody 1s ease forwards;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease-out forwards;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    opacity: 0;
+    animation: fadeInUp 1.2s ease-out forwards;
+    animation-delay: 0.8s;
+}
+
+.hero .scroll-down {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 1rem;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+    color: #f0f0f0;
+    opacity: 0.7;
+}
+
+.hero-button {
+    margin-top: 2rem;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.1rem;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.2s ease-out forwards;
+    animation-delay: 1.6s;
+}
+
+
+
+/* === ANIMACIONES === */
+@keyframes fadeInDown {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInBody {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+/* === CONTENEDOR GENERAL === */
+.container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    border: 1px solid #2c2c2c;
+}
+
+/* === ENVOLTURA DE CONTENIDO === */
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* === HEADER === */
+header {
+    background: linear-gradient(to right, #1f1f1f, #111);
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* === NAV === */
+.nav {
+    background-color: #1a1a1a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+
+.nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* === MAIN === */
+main {
+    padding: 2rem 1rem;
+}
+
+main h2 {
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+ul li {
+    margin-bottom: 1rem;
+}
+
+/* === FOOTER === */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #1a1a1a;
+    color: #aaa;
+    margin-top: 3rem;
+}
+
+/* === SOCIAL LINKS === */
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    margin-right: 1rem;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* === TOOLS: TEMA & IDIOMA === */
+.tools {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.tools button,
+.tools select {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+/* === IMAGEN PERFIL === */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+/* === PROYECTOS === */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* === MODO CLARO === */
+body.light {
+    background-color: #fdfdfd;
+    color: #1a1a1a;
+}
+
+body.light .container {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+body.light header {
+    background: linear-gradient(to right, #ffffff, #e0e0e0);
+    color: #2c3e50;
+}
+
+body.light .nav {
+    background-color: #eaeaea;
+}
+
+body.light .nav a {
+    color: #1a1a1a;
+}
+
+body.light main h2 {
+    color: #111;
+}
+
+body.light .project-card {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+body.light .project-card a {
+    color: #0066cc;
+}
+
+body.light footer {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+body.light .tools button,
+body.light .tools select {
+    background-color: #e0e0e0;
+    color: #111;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .social-links {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tools {
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+}
+
+body.light .hero {
+    background: linear-gradient(to bottom right, #f2f2f2, #e0e0e0);
+    color: #1a1a1a;
+}
+
+body.light .hero-button {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+

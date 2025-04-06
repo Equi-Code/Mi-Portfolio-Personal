@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Ezequiel Riente</title>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content-wrapper">
+    <!-- HERO ANIMADA INICIAL -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hola, soy <span class="highlight">Ezequiel Riente</span></h1>
+            <p class="hero-subtitle">Desarrollador Web Frontend</p>
+            <button class="hero-button"
+                onclick="document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' })">Explorar</button>
+        </div>
+    </section>
+</div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+     <div class="content-wrapper">
+    <div id="main-content">
+        <header>
+            <div class="container header-content">
+                <img src="./img/fotoPerfil.jpg" alt="Foto de perfil" class="profile-pic" />
+                <div>
+                    <h1>Ezequiel Riente</h1>
+                    <p data-key="descripcion">Apasionado por el desarrollo web y la creación de experiencias digitales elegantes.</p>
+                    <div class="social-links">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">GitHub</a>
+                        <a href="#">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tools">
+                <button id="theme-toggle">Modo Claro</button>
+                <label for="language-select" class="visually-hidden">Idioma</label>
+                <select id="language-select" aria-label="Seleccionar idioma">
+                  <option value="es">ES</option>
+                  <option value="en">EN</option>
+                </select>
+              </div>
+        </header>
+
+        <nav class="nav">
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#estudios">Estudios</a>
+            <a href="#proyectos">Proyectos</a>
+        </nav>
+
+        <main>
+            <section id="sobre-mi">
+                <h2>Sobre mí</h2>
+                <p data-key="sobre">Desarrollador con experiencia en proyectos modernos y enfoque en usabilidad.</p>
+            </section>
+
+            <section id="experiencia">
+                <h2>Experiencia</h2>
+                <ul>
+                    <li>Empresa X - Frontend Developer (2022 - Presente)</li>
+                </ul>
+            </section>
+
+            <section id="estudios">
+                <h2>Estudios</h2>
+                <ul>
+                    <li></li>
+                </ul>
+            </section>
+
+            <section id="proyectos">
+                <h2>Proyectos</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="img/project1.jpg" alt="Proyecto 1">
+                        <h3>Portfolio Web</h3>
+                        <p data-key="proyectos">Un portfolio responsive con modo oscuro y cambio de idioma.</p>
+                        <a href="#">Ver más</a>
+                    </div>
+
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <img src="img/project1.jpg" alt="Proyecto 1">
+                            <h3>Portfolio Web</h3>
+                            <p data-key="proyectos">Un portfolio responsive con modo oscuro y cambio de idioma.</p>
+                            <a href="#">Ver más</a>
+                        </div>
+
+                        <div class="project-grid">
+                            <div class="project-card">
+                                <img src="img/project1.jpg" alt="Proyecto 1">
+                                <h3>Portfolio Web</h3>
+                                <p data-key="proyectos">Un portfolio responsive con modo oscuro y cambio de idioma.</p>
+                                <a href="#">Ver más</a>
+                            </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Ezequiel Riente - Todos los derechos reservados</p>
+        </footer>
+    </div>
+</div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
