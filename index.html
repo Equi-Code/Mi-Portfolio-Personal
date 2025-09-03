@@ -4,111 +4,238 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portfolio personal de Ezequiel Riente. Desarrollador de software y aplicaciones móviles con experiencia en Android (Jetpack Compose, Firebase), diseño web moderno y soluciones tecnológicas. Proyectos destacados, experiencia laboral y contacto." />
+
+    <meta name="keywords"
+        content="Ezequiel Riente, portfolio, desarrollador Android, Jetpack Compose, Firebase, desarrollo de software, aplicaciones móviles, diseño web, programación, proyectos personales" />
+
+    <meta name="author" content="Ezequiel Riente" />
+
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Ezequiel Riente - Desarrollo y Consultas" />
+    <meta property="og:description"
+        content="Visitá nuestra tienda con estilo neón oscuro. Componentes, consolas y más." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.ezequielriente.com.ar" />
+
+
+
     <title>Portfolio | Ezequiel Riente</title>
-    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Iconos Font awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
-    <div class="content-wrapper">
-    <!-- HERO ANIMADA INICIAL -->
-    <section class="hero" id="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Hola, soy <span class="highlight">Ezequiel Riente</span></h1>
-            <p class="hero-subtitle">Desarrollador Web Frontend</p>
-            <button class="hero-button"
-                onclick="document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' })">Explorar</button>
+
+    <section class="tools">
+        <button id="theme-toggle">Modo Claro</button>
+        <label for="language-select" class="visually-hidden">Idioma</label>
+        <select id="language-select" aria-label="Seleccionar idioma">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+        </select>
+    </section>
+
+    <section class="hero">
+        <div class="hero-container">
+            <!-- Columna izquierda: texto -->
+            <div class="hero-text">
+                <h1 data-key="titulo" class="hero-title"> <span data-key="holaSoy">Hola, soy</span><span class="highlight"> Ezequiel Riente</span></h1>
+                <p  class="subtitulo" data-key="saludo" class="subtitulo">¡Bienvenidos a mi portfolio!</p>
+                <h2 data-key="rol">Desarrollador Web Frontend</h2>
+                <p data-key="descripcion">
+                    Me apasiona crear interfaces modernas, intuitivas y escalables para brindar la mejor experiencia de
+                    usuario 🚀
+                </p>
+
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/tuusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/tuusuario" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:ezequielriente@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://instagram.com/tuusuario" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#contacto"><i class="fas fa-user"></i></a>
+                </div>
+
+                <a href="#sobre-mi" class="btn-hero" data-key="explorar">Explorar</a>
+            </div>
+
+            <!-- Columna derecha: imagen -->
+            <div class="hero-image">
+                <img src="./img/fotoPerfil.jpg" alt="Ezequiel Riente" />
+            </div>
         </div>
     </section>
-</div>
+
+
 
     <!-- CONTENIDO PRINCIPAL -->
-     <div class="content-wrapper">
-    <div id="main-content">
-        <header>
-            <div class="container header-content">
-                <img src="./img/fotoPerfil.jpg" alt="Foto de perfil" class="profile-pic" />
-                <div>
-                    <h1>Ezequiel Riente</h1>
-                    <p data-key="descripcion">Apasionado por el desarrollo web y la creación de experiencias digitales elegantes.</p>
-                    <div class="social-links">
-                        <a href="#">LinkedIn</a>
-                        <a href="#">GitHub</a>
-                        <a href="#">Email</a>
-                    </div>
+    <header>
+        <div class="header-container">
+            <nav class="nav">
+                <a href="#sobre-mi" data-key="navSobreMi">Sobre mí</a>
+                <a href="#experiencia" data-key="navExperiencia">Experiencia</a>
+                <a href="#estudios" data-key="navEstudios">Estudios</a>
+                <a href="#proyectos" data-key="navProyectos">Proyectos</a>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div>
+        <section id="sobre-mi" class="about">
+            <h2 data-key="sobreMi">Sobre mí</h2>
+            <p data-key="aboutP1">
+                Soy un <strong>Desarrollador Front-End</strong> apasionado por transformar ideas en experiencias
+                digitales únicas.
+                Mi objetivo es crear <em>sitios web modernos, accesibles y fáciles de usar</em>, combinando
+                creatividad con
+                código limpio y funcional.
+            </p>
+            <p data-key="aboutP2">
+                Manejo con soltura tecnologías como <strong>HTML, CSS, JavaScript y frameworks modernos
+                    como React, Angular y Vue</strong>, lo que me permite adaptar cada proyecto a las
+                necesidades específicas de mis clientes.
+            </p>
+            <p data-key="aboutP3">
+                Además, disfruto del proceso de aprendizaje continuo: siempre busco estar a la
+                vanguardia de las tendencias en <em>diseño web, UX/UI y desarrollo</em>.
+                Mi meta no es solo programar sitios, sino construir
+                <strong>experiencias digitales que conecten con las personas</strong>.
+            </p>
+        </section>
+        </div>
+
+        <section id="experiencia" class="certificados">
+            <h2><i class="fas fa-briefcase"></i> <span data-key="experiencia">Experiencia</span></h2>
+            <ul>
+                <li><i class="fas fa-laptop-code"></i> Proyecto Freelance - Desarrollo Web (2024 - Presente)
+                </li>
+                <li><i class="fas fa-laptop-code"></i> Oficial Sr de Negocios Agente Bursatil - Banco de Valores
+                    (2010 - 2023)</li>
+            </ul>
+        </section>
+
+        <!-- Sección Estudios -->
+        <section id="estudios" class="certificados">
+            <h2>🎓 <span data-key="certificados">Certificados</span></h2>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-code"></i>
+                    <a href="./certificados/Certificado Carrera.png" target="_blank">Carrera de Desarrollo
+                        Front-End React</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <a href="./certificados/Front_-_Certificacin .pdf" target="_blank">Front End -
+                        JavaScript</a>
+                </li>
+
+                <li>
+                    <i class="fa-brands fa-python"></i>
+                    <a href="./certificados/Diploma_TT.pdf" target="_blank">Iniciacion a la Programacion con
+                        Python</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-database"></i>
+                    <a href="./certificados/Certificado Desarrollo Web.png" target="_blank">Curso Desarrollo
+                        Web</a>
+                </li>
+
+            </ul>
+        </section>
+
+        <section id="proyectos" class="proyects">
+            <h2 data-key="proyectos">Proyectos</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="./img/Oestech.png" alt="Portfolio Web" class="project-img">
+                    <h3>OESTECH</h3>
+                    <p data-key="proyect1">Diseño y desarrollo de mi portfolio personal.</p>
+                    <a href="https://equi-code.github.io/OESTECH/" data-key="proyect">Ver proyecto</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="./img/Cotizaciones.png" alt="Portfolio Web" class="project-img">
+                    <h3>COTIZACIONES</h3>
+                    <p data-key="proyect2">Diseño y desarrollo de mi portfolio personal.</p>
+                    <a href="https://equi1988.github.io/bagriecotizaciones/index.html" class="btn-project"
+                        target="_blank" data-key="proyect">Ver proyecto</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="./img/BagrieShop.png" alt="Portfolio Web" class="project-img">
+                    <h3>BAGRIE SHOP</h3>
+                    <p data-key="proyect3">Diseño y desarrollo de mi portfolio personal.</p>
+                    <a href="https://bagrieshop.netlify.app/" class="btn-project" target="_blank" data-key="proyect">Ver proyecto</a>
                 </div>
             </div>
-            <div class="tools">
-                <button id="theme-toggle">Modo Claro</button>
-                <label for="language-select" class="visually-hidden">Idioma</label>
-                <select id="language-select" aria-label="Seleccionar idioma">
-                  <option value="es">ES</option>
-                  <option value="en">EN</option>
-                </select>
-              </div>
-        </header>
+        </section>
 
-        <nav class="nav">
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#experiencia">Experiencia</a>
-            <a href="#estudios">Estudios</a>
-            <a href="#proyectos">Proyectos</a>
-        </nav>
+        <section class="contacto">
+            <h2 data-key="contactTitle">¡Envíame un mensaje!</h2>
+            <p data-key="contactIntro">¿Tienes alguna pregunta o propuesta, o simplemente quieres saludar? ¡Adelante!</p>
 
-        <main>
-            <section id="sobre-mi">
-                <h2>Sobre mí</h2>
-                <p data-key="sobre">Desarrollador con experiencia en proyectos modernos y enfoque en usabilidad.</p>
-            </section>
-
-            <section id="experiencia">
-                <h2>Experiencia</h2>
-                <ul>
-                    <li>Empresa X - Frontend Developer (2022 - Presente)</li>
-                </ul>
-            </section>
-
-            <section id="estudios">
-                <h2>Estudios</h2>
-                <ul>
-                    <li></li>
-                </ul>
-            </section>
-
-            <section id="proyectos">
-                <h2>Proyectos</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <img src="img/project1.jpg" alt="Proyecto 1">
-                        <h3>Portfolio Web</h3>
-                        <p data-key="proyectos">Un portfolio responsive con modo oscuro y cambio de idioma.</p>
-                        <a href="#">Ver más</a>
+            <form action="https://formspree.io/f/mblollow" method="POST" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name" data-key="labelName">Tu nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Ingresar tu nombre" data-placeholder="phName" required>
                     </div>
-
-                    <div class="project-grid">
-                        <div class="project-card">
-                            <img src="img/project1.jpg" alt="Proyecto 1">
-                            <h3>Portfolio Web</h3>
-                            <p data-key="proyectos">Un portfolio responsive con modo oscuro y cambio de idioma.</p>
-                            <a href="#">Ver más</a>
-                        </div>
-
-                        <div class="project-grid">
-                            <div class="project-card">
-                                <img src="img/project1.jpg" alt="Proyecto 1">
-                                <h3>Portfolio Web</h3>
-                                <p data-key="proyectos">Un portfolio responsive con modo oscuro y cambio de idioma.</p>
-                                <a href="#">Ver más</a>
-                            </div>
+                    <div class="form-group">
+                        <label for="email" data-key="labelEmail">Correo Electronico</label>
+                        <input type="email" id="email" name="email" placeholder="Introduce tu dirección de correo electrónico" data-placeholder="phEmail">
+                    </div>
                 </div>
-            </section>
-        </main>
+                <div class="form-group full-width">
+                    <label for="message" data-key="labelMessage">Mensaje</label>
+                    <textarea id="message" name="message" placeholder="Hola, necesito un diseño......"
+                    data-placeholder="phMessage"required></textarea>
+                </div>
+                <button type="submit" class="btn-shoot" data-key="btnShoot">Enviar →</button>
+            </form>
+        </section>
 
-        <footer>
-            <p>© 2025 Ezequiel Riente - Todos los derechos reservados</p>
-        </footer>
+
+    </main>
+
+    <!-- Contenedor de botones flotantes -->
+    <div class="btn-float-container">
+        <a href="https://wa.me/1166248428" target="_blank" class="btn-float whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#top" class="btn-float up">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </div>
-</div>
+
+
+
+    <footer>
+        <p>© 2025 Ezequiel Riente - <span data-key="rights"> Todos los derechos reservados.</span></p>
+        
+        <div class="footer-social">
+            <p data-key="followMe">Seguime para ver mi día a día como desarrollador y tips de código.</p>
+            <a href="./avisoLegal.html" target="_blank"><span data-key="notice">| Aviso Legal |</span></a>
+            <a href="https://linkedin.com/in/tuusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Equi-Code" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:ezequielriente@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/equi_code/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#contacto"><i class="fas fa-user"></i></a>
+        </div>
+    </footer>
+    </div>
     <script src="./js/script.js"></script>
 </body>
 

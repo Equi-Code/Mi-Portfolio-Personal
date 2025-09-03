@@ -1,0 +1,134 @@
+.legal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.legal-header nav {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.btn-back {
+    display: inline-block;
+    background-color: #1a73e8;
+    /* o tu color de marca */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #155ab6;
+}
+
+/* Estilos generales */
+.legal {
+    background: #1a1a1a;
+    border-radius: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Inter', sans-serif;
+    /* color: white; */
+    line-height: 1.7;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.legal:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 8px 25px rgba(0, 255, 204, 0.3);
+}
+
+/* Encabezado principal */
+.legal h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    /* tono principal (puede ser el verde de tu identidad) */
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Encabezados de secciones */
+.legal h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    border-left: 4px solid #00ffcc33;
+    /* línea de acento */
+    padding-left: 0.5rem;
+}
+
+/* Párrafos */
+.legal p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Footer */
+.legal footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.volver-inicio {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.volver-inicio .btn-back {
+    display: inline-block;
+    text-align: center;
+    background: linear-gradient(135deg, #00ffcc, #0066ff);
+    color: #0f0f0f;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.9rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.volver-inicio .btn-back:hover {
+    background: #00ffcc33;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Modo Claro */
+
+body.light .legal{
+    background-color: white;
+    border: 3px solid #c0c3c2;
+}
+
+body.light .legal h1,
+body.light .legal h2 {
+    color: black;
+}
+
+body.light .volver-inicio .btn-back {
+    display: inline-block;
+    text-align: center;
+    background: linear-gradient(135deg, white, black);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.9rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
