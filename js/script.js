@@ -29,9 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
             certificados: "Certificados",
             proyectos: "Proyectos",
 
-            proyect:"Ver proyecto",
+            proyect: "Ver proyecto",
 
-            proyect1:"Diseño y desarrollo de mi portfolio personal.",
+            proyect1: "Diseño y desarrollo de mi portfolio personal.",
 
             contactTitle: "¡Enviame un mensaje!",
             contactIntro: "¿Tenés una consulta o propuesta, o solo querés saludar? Adelante.",
@@ -44,27 +44,27 @@ document.addEventListener("DOMContentLoaded", () => {
             btnShoot: "ENVIAR →",
 
             rights: "Todos los derechos reservados.",
-            notice:"| Aviso Legal |",
-            followMe:"Seguime para ver mi día a día como desarrollador y tips de código.",
+            notice: "| Aviso Legal |",
+            followMe: "Seguime para ver mi día a día como desarrollador y tips de código.",
 
 
             toggleDark: "Modo Oscuro",
             toggleLight: "Modo Claro",
 
-            noticeh1:"Aviso Legal",
-            noticeh2:"1. Titularidad del sitio",
-            noticeh3:"2. Propósito del sitio",
-            noticeh4:"3. Derechos de autor",
-            noticeh5:"4. Exención de responsabilidad",
-            noticeh6:"5. Legislación aplicable",
+            noticeh1: "Aviso Legal",
+            noticeh2: "1. Titularidad del sitio",
+            noticeh3: "2. Propósito del sitio",
+            noticeh4: "3. Derechos de autor",
+            noticeh5: "4. Exención de responsabilidad",
+            noticeh6: "5. Legislación aplicable",
 
-            noticep1:"Este sitio web es propiedad de Ezequiel Riente, con domicilio en Ciudad Autonoma de Buenos Aires, Argentia.",
-            noticep2:"El contenido de este sitio tiene fines informativos y/o demostrativos. En el caso de portafolio, los proyectos presentados son muestras de trabajos previos. En el caso de e-commerce, los productos ofrecidos se ajustan a las condiciones establecidas en los Términos y Condiciones.",
-            noticep3:"Todos los contenidos, textos, imágenes y diseños presentes en este sitio son propiedad de Ezequiel Riente, salvo que se indique lo contrario. Queda prohibida su reproducción, distribución o modificación sin autorización expresa",
-            noticep4:"El titular no se hace responsable de posibles errores en los contenidos ni del uso inadecuado que los usuarios puedan hacer de la información o los materiales del sitio.",
-            noticep5:"Este Aviso Legal se rige por la legislación vigente en Argentina. En caso de controversia, será competente la jurisdicción de Ciudad Autonoma de Buenos Aires.",
+            noticep1: "Este sitio web es propiedad de Ezequiel Riente, con domicilio en Ciudad Autonoma de Buenos Aires, Argentina.",
+            noticep2: "El contenido de este sitio tiene fines informativos y/o demostrativos. En el caso de portafolio, los proyectos presentados son muestras de trabajos previos. En el caso de e-commerce, los productos ofrecidos se ajustan a las condiciones establecidas en los Términos y Condiciones.",
+            noticep3: "Todos los contenidos, textos, imágenes y diseños presentes en este sitio son propiedad de Ezequiel Riente, salvo que se indique lo contrario. Queda prohibida su reproducción, distribución o modificación sin autorización expresa",
+            noticep4: "El titular no se hace responsable de posibles errores en los contenidos ni del uso inadecuado que los usuarios puedan hacer de la información o los materiales del sitio.",
+            noticep5: "Este Aviso Legal se rige por la legislación vigente en Argentina. En caso de controversia, será competente la jurisdicción de Ciudad Autonoma de Buenos Aires.",
 
-            back:"← Volver al inicio",
+            back: "← Volver al inicio",
 
 
         },
@@ -95,8 +95,8 @@ document.addEventListener("DOMContentLoaded", () => {
             proyectos: "Projects",
 
 
-            proyect:"See Project",
-            proyect1:"Design and development of my personal portfolio.",
+            proyect: "See Project",
+            proyect1: "Design and development of my personal portfolio.",
 
             contactTitle: "Send me a message!",
             contactIntro: "Got a question or proposal, or just want to say hello? Go ahead.",
@@ -109,31 +109,31 @@ document.addEventListener("DOMContentLoaded", () => {
             btnShoot: "SHOOT →",
 
             rights: "All rights reserved.",
-            notice:"| Legal Notice |",
-            followMe:"Follow along to see my day-to-day life as a developer and coding tips.",
+            notice: "| Legal Notice |",
+            followMe: "Follow along to see my day-to-day life as a developer and coding tips.",
 
             toggleDark: "Dark Mode",
             toggleLight: "Light Mode",
 
-            noticeh1:"Legal Notice",
-            noticeh2:"1. Ownership of the site",
-            noticeh3:"2. Purpose of the site",
-            noticeh4:"3. Copyright",
-            noticeh5:"4. Disclaimer",
-            noticeh6:"5. Applicable legislation",
+            noticeh1: "Legal Notice",
+            noticeh2: "1. Ownership of the site",
+            noticeh3: "2. Purpose of the site",
+            noticeh4: "3. Copyright",
+            noticeh5: "4. Disclaimer",
+            noticeh6: "5. Applicable legislation",
 
-            noticep1:"This website is owned by Ezequiel Riente, domiciled in the Autonomous City of Buenos Aires, Argentina",
-            noticep2:"The content of this site is for informational and/or demonstrative purposes only. In the case of a portfolio, the projects presented are samples of previous work. In the case of e-commerce, the products offered comply with the conditions established in the Terms and Conditions.",
-            noticep3:"All content, text, images, and designs on this site are the property of Ezequiel Riente, unless otherwise indicated. Reproduction, distribution, or modification without express authorization is prohibited.",
-            noticep4:"The owner is not responsible for any errors in the content or for any improper use that users may make of the information or materials on the site.",
-            noticep5:"This Legal Notice is governed by the laws in force in Argentina. In the event of a dispute, the jurisdiction of the Autonomous City of Buenos Aires shall be competent.",
+            noticep1: "This website is owned by Ezequiel Riente, domiciled in the Autonomous City of Buenos Aires, Argentina",
+            noticep2: "The content of this site is for informational and/or demonstrative purposes only. In the case of a portfolio, the projects presented are samples of previous work. In the case of e-commerce, the products offered comply with the conditions established in the Terms and Conditions.",
+            noticep3: "All content, text, images, and designs on this site are the property of Ezequiel Riente, unless otherwise indicated. Reproduction, distribution, or modification without express authorization is prohibited.",
+            noticep4: "The owner is not responsible for any errors in the content or for any improper use that users may make of the information or materials on the site.",
+            noticep5: "This Legal Notice is governed by the laws in force in Argentina. In the event of a dispute, the jurisdiction of the Autonomous City of Buenos Aires shall be competent.",
 
-            back:"← Back to top",
+            back: "← Back to top",
 
         },
     };
 
-    
+
 
     // Preferencias guardadas
     const savedTheme = localStorage.getItem("theme") || "dark";
@@ -213,19 +213,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const elements = document.querySelectorAll(".fade-in, .slide-in, .slide-in-right");
+    const elements = document.querySelectorAll(".fade-in, .slide-in, .slide-in-right");
 
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-        obs.unobserve(entry.target); // solo se anima una vez
-      }
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                obs.unobserve(entry.target); // solo se anima una vez
+            }
+        });
+    }, {
+        threshold: 0.2 // porcentaje visible antes de disparar
     });
-  }, {
-    threshold: 0.2 // porcentaje visible antes de disparar
-  });
 
-  elements.forEach(el => observer.observe(el));
+    elements.forEach(el => observer.observe(el));
 });
 
