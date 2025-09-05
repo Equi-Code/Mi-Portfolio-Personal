@@ -264,6 +264,44 @@ ul li {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
+/* ====== Animaciones on scroll ====== */
+
+/* Estado inicial oculto */
+.fade-in, .slide-in {
+  opacity: 0;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Cuando entran en pantalla */
+.fade-in.show, .slide-in.show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Fade-in desde abajo */
+.fade-in {
+  transform: translateY(30px);
+}
+
+/* Slide-in desde la izquierda */
+.slide-in {
+  transform: translateX(-40px);
+}
+
+/* Opcional: desde la derecha */
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-in-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
 .about:hover {
     transform: translateY(-12px);
     box-shadow: 0 8px 25px rgba(0, 255, 204, 0.3);

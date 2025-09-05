@@ -212,4 +212,20 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".fade-in, .slide-in, .slide-in-right");
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        obs.unobserve(entry.target); // solo se anima una vez
+      }
+    });
+  }, {
+    threshold: 0.2 // porcentaje visible antes de disparar
+  });
+
+  elements.forEach(el => observer.observe(el));
+});
 
