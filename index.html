@@ -60,8 +60,10 @@
                 </p>
 
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/ezequielnicolasriente/" target="_blank" rel="noopener noreferrer" title="linkedin"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Equi-Code" target="_blank" rel="noopener noreferrer" title="github"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ezequielnicolasriente/" target="_blank"
+                        rel="noopener noreferrer" title="linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Equi-Code" target="_blank" rel="noopener noreferrer" title="github"><i
+                            class="fab fa-github"></i></a>
                     <a href="mailto:ezequielrientecode@gmail.com" title="mailto"><i class="fas fa-envelope"></i></a>
                     <a href="https://www.instagram.com/equi_code/
                     " target="_blank" rel="noopener noreferrer" title="instagram"><i class="fab fa-instagram"></i></a>
@@ -97,7 +99,10 @@
     <main>
         <div>
             <section id="sobre-mi" class="about fade-in">
-                <h2 data-key="sobreMi">Sobre mí</h2>
+                <h2>
+                    <i class="fas fa-user"></i>
+                    <span data-key="sobreMi">Sobre mí</span>
+                </h2>
                 <p data-key="aboutP1">
                     Soy un <strong>Desarrollador Front-End</strong> apasionado por transformar ideas en experiencias
                     digitales únicas.
@@ -119,19 +124,38 @@
             </section>
         </div>
 
-        <section id="experiencia" class="certificados fade-in">
+        <section id="experiencia" class="timeline-section fade-in">
             <h2><i class="fas fa-briefcase"></i> <span data-key="experiencia">Experiencia</span></h2>
-            <ul>
-                <li><i class="fas fa-laptop-code"></i> Proyecto Freelance - Desarrollo Web (2024 - Presente)
-                </li>
-                <li><i class="fas fa-laptop-code"></i> Oficial Sr de Negocios Agente Bursatil - Banco de Valores
-                    (2010 - 2023)</li>
-            </ul>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="timeline-content">
+                        <h3 data-key="experienciah1">Proyecto Freelance - Desarrollo Web</h3>
+                        <span class="date" data-key="experienciaaño">2024 - Presente</span>
+                        <p data-key="experienciap1">Diseño y desarrollo de sitios web modernos y optimizados, aplicando
+                            tecnologías como HTML,
+                            CSS, JavaScript y frameworks actuales.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-university"></i></div>
+                    <div class="timeline-content">
+                        <h3 data-key="experienciah2">Oficial Sr. de Negocios - Banco de Valores</h3>
+                        <span class="date">2010 - 2023</span>
+                        <p data-key="experienciap2">Gestión de carteras de inversión, asesoramiento financiero y
+                            análisis de mercado como agente
+                            bursátil.</p>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <!-- Sección Estudios -->
         <section id="estudios" class="certificados fade-in">
-            <h2>🎓 <span data-key="certificados">Certificados</span></h2>
+            <h2><i class="fas fa-graduation-cap"></i> <span data-key="estudios">Estudios</span></h2>
             <ul>
                 <li>
                     <i class="fa-solid fa-code"></i>
@@ -159,31 +183,109 @@
         </section>
 
         <section id="proyectos" class="proyects fade-in">
-            <h2 data-key="proyectos">Proyectos</h2>
+            <h2><i class="fas fa-folder-open"></i> <span data-key="proyectos">Proyectos</span></h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <img src="./img/Oestech.png" alt="Portfolio Web" class="project-img">
                     <h3>OESTECH</h3>
+                    <img src="./img/Oestech.png" alt="Portfolio Web" class="project-img">
+
                     <p data-key="proyect1">Diseño y desarrollo de mi portfolio personal.</p>
-                    <a href="https://equi1988.github.io/OESTECH/" class="btn-project" target="_blank"
-                        data-key="proyect" rel="noopener noreferrer">Ver proyecto</a>
+                    <!-- <div class="project-links">
+                        <a href="https://equi-code.github.io/OESTECH/" target="_blank" rel="noopener noreferrer"
+                            class="btn-icon">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="https://github.com/Equi-Code/OESTECH.git" target="_blank" rel="noopener noreferrer"
+                            class="btn-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div> -->
+                    <div class="project-links">
+                        <a href="https://equi-code.github.io/OESTECH/" target="_blank" rel="noopener noreferrer"
+                            class="btn-project">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                        <a href="https://github.com/Equi-Code/OESTECH.git" target="_blank" rel="noopener noreferrer"
+                            class="btn-project"  >
+                            <i class="fab fa-github"></i> <span data-key="code">Código</span>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="project-card">
-                    <img src="./img/Cotizaciones.png" alt="Portfolio Web" class="project-img">
                     <h3>COTIZACIONES</h3>
-                    <p data-key="proyect2">Diseño y desarrollo de mi portfolio personal.</p>
-                    <a href="https://equi1988.github.io/bagriecotizaciones/index.html" class="btn-project"
-                        target="_blank" data-key="proyect" rel="noopener noreferrer">Ver proyecto</a>
+                    <img src="./img/Cotizaciones.png" alt="Portfolio Web" class="project-img">
+
+                    <p data-key="proyect2">Aplicación web en JavaScript para cálculo de plazos fijos y consulta de
+                        información financiera.</p>
+                    <div class="project-links">
+                        <a href="https://equi-code.github.io/bagriecotizaciones/" target="_blank" rel="noopener noreferrer"
+                            class="btn-project">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                        <a href="https://github.com/Equi-Code/bagriecotizaciones.git" target="_blank" rel="noopener noreferrer"
+                            class="btn-project">
+                            <i class="fab fa-github"></i> <span data-key="code">Código</span>
+                        </a>
+                    </div>
+
+
+                        <!-- <div class="project-links">
+                        <a href="https://equi-code.github.io/bagriecotizaciones/" target="_blank"
+                            rel="noopener noreferrer" class="btn-icon">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="https://github.com/Equi-Code/bagriecotizaciones.git" target="_blank"
+                            rel="noopener noreferrer" class="btn-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>-->
                 </div>
 
                 <div class="project-card">
-                    <img src="./img/BagrieShop.png" alt="Portfolio Web" class="project-img">
                     <h3>BAGRIE SHOP</h3>
-                    <p data-key="proyect3">Diseño y desarrollo de mi portfolio personal.</p>
-                    <a href="https://bagrieshop.netlify.app/" class="btn-project" target="_blank" data-key="proyect" rel="noopener noreferrer">Ver
-                        proyecto</a>
+                    <img src="./img/BagrieShop.png" alt="Portfolio Web" class="project-img">
+
+                    <p data-key="proyect3">Plataforma de comercio electrónico desarrollada con React y consumo de API.
+                    </p>
+                    <!-- <div class="project-links">
+                        <a href="https://bagrieshop.netlify.app/" target="_blank" rel="noopener noreferrer"
+                            class="btn-icon">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="https://github.com/Equi-Code/proyecto-bagrie.git" target="_blank"
+                            rel="noopener noreferrer" class="btn-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div> -->
+                                        <div class="project-links">
+                        <a href="https://bagrieshop.netlify.app/" target="_blank" rel="noopener noreferrer"
+                            class="btn-project">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                        <a href="https://github.com/Equi-Code/proyecto-bagrie.git" target="_blank" rel="noopener noreferrer"
+                            class="btn-project">
+                            <i class="fab fa-github"></i> <span data-key="code">Código</span>
+                        </a>
+                    </div>
+
                 </div>
+
+                <div class="project-card">
+                    <h3>E-commerce Esol</h3>
+                    <img src="./img/EsolShop.png" alt="Portfolio Web" class="project-img">
+                    <p data-key="proyect4"> API y sistema de gestión de productos con carritos de compra desarrollado
+                        con Node.js, Express, MongoDB, Handlebars y Socket.IO.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Equi-Code/Proyecto-Final-Esol.git" target="_blank"
+                            rel="noopener noreferrer" class="btn-project">
+                            <i class="fab fa-github"></i><span data-key="code">Código</span>
+                        </a>
+                    </div>
+                </div>
+
+
+
             </div>
         </section>
 
@@ -219,7 +321,8 @@
 
     <!-- Contenedor de botones flotantes -->
     <div class="btn-float-container">
-        <a href="https://wa.me/1139259252" target="_blank" class="btn-float whatsapp" rel="noopener noreferrer" title="whatsapp">
+        <a href="https://wa.me/+5491139259252" target="_blank" class="btn-float whatsapp" rel="noopener noreferrer"
+            title="whatsapp">
             <i class="fab fa-whatsapp"></i>
         </a>
         <a href="#top" class="btn-float up" title="iconowhat">
@@ -235,10 +338,14 @@
         <div class="footer-social">
             <p data-key="followMe">Seguime para ver mi día a día como desarrollador y tips de código.</p>
             <a href="./avisoLegal.html" target="_blank"><span data-key="notice">| Aviso Legal |</span></a>
-            <a href="https://www.linkedin.com/in/ezequielnicolasriente/" target="_blank" rel="noopener noreferrer" title="linkedin"><i class="fab fa-linkedin" ></i></a>
-            <a href="https://github.com/Equi-Code" target="_blank" rel="noopener noreferrer" title="github"><i class="fab fa-github"></i></a>
-            <a href="mailto:ezequielrientecode@gmail.com" rel="noopener noreferrer" title="mailto"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.instagram.com/equi_code/" target="_blank" rel="noopener noreferrer" title="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ezequielnicolasriente/" target="_blank" rel="noopener noreferrer"
+                title="linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Equi-Code" target="_blank" rel="noopener noreferrer" title="github"><i
+                    class="fab fa-github"></i></a>
+            <a href="mailto:ezequielrientecode@gmail.com" rel="noopener noreferrer" title="mailto"><i
+                    class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/equi_code/" target="_blank" rel="noopener noreferrer"
+                title="instagram"><i class="fab fa-instagram"></i></a>
             <a href="#contacto" title="contacto"><i class="fas fa-user"></i></a>
         </div>
     </footer>

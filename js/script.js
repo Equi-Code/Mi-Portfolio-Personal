@@ -27,11 +27,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
             experiencia: "Experiencia",
             certificados: "Certificados",
+            estudios: "Estudios",
             proyectos: "Proyectos",
+
+            experienciah1:"Proyecto Freelance - Desarrollo Web",
+            experienciah2:"Oficial Sr. de Negocios - Banco de Valores",
+
+            experienciap1:"Diseño y desarrollo de sitios web modernos y optimizados, aplicando tecnologías como HTML,CSS, JavaScript y frameworks actuales.",
+            experienciap2:"Gestión de carteras de inversión, asesoramiento financiero y análisis de mercado como agente bursátil.",
+
+            experienciaaño:"2024 - Presente",
 
             proyect: "Ver proyecto",
 
             proyect1: "Diseño y desarrollo de mi portfolio personal.",
+            proyect2:"Aplicación web en JavaScript para cálculo de plazos fijos y consulta de información financiera.",
+            proyect3:"Plataforma de comercio electrónico desarrollada con React y consumo de API.",
+            proyect4:"API y sistema de gestión de productos con carritos de compra desarrollado con Node.js, Express, MongoDB, Handlebars y Socket.IO.",
+            code:"Código",
+
 
             contactTitle: "¡Enviame un mensaje!",
             contactIntro: "¿Tenés una consulta o propuesta, o solo querés saludar? Adelante.",
@@ -92,11 +106,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
             experiencia: "Experience",
             certificados: "Certificates",
+            estudios: "Studies",
             proyectos: "Projects",
 
+            experienciah1:"Freelance Project - Web Development",
+            experienciah2:"Senior Business Officer - Banco de Valores",
+
+            experienciap1:"Design and development of modern, optimized websites using technologies such as HTML, CSS, JavaScript, and current frameworks.",
+            experienciap2:"Investment portfolio management, financial advice, and market analysis as a stockbroker.",
+
+            experienciaaño:"2024 - Present",
 
             proyect: "See Project",
             proyect1: "Design and development of my personal portfolio.",
+            proyect2:"JavaScript web application for calculating fixed-term deposits and viewing financial information.",
+            proyect3:"E-commerce platform developed with React and API consumption.",
+            proyect4:"API and product management system with shopping carts developed with Node.js, Express, MongoDB, Handlebars, and Socket.IO.",
+            code:"Code",
+
 
             contactTitle: "Send me a message!",
             contactIntro: "Got a question or proposal, or just want to say hello? Go ahead.",
