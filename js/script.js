@@ -46,6 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
             proyect4:"API y sistema de gestión de productos con carritos de compra desarrollado con Node.js, Express, MongoDB, Handlebars y Socket.IO.",
             code:"Código",
 
+            tecno:"Tecnologías",
+
 
             contactTitle: "¡Enviame un mensaje!",
             contactIntro: "¿Tenés una consulta o propuesta, o solo querés saludar? Adelante.",
@@ -123,6 +125,8 @@ document.addEventListener("DOMContentLoaded", () => {
             proyect3:"E-commerce platform developed with React and API consumption.",
             proyect4:"API and product management system with shopping carts developed with Node.js, Express, MongoDB, Handlebars, and Socket.IO.",
             code:"Code",
+
+            tecno:"Technologies",
 
 
             contactTitle: "Send me a message!",

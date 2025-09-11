@@ -306,6 +306,7 @@ ul li {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .about:hover {
     transform: translateY(-12px);
     box-shadow: 0 8px 25px rgba(0, 255, 204, 0.3);
@@ -547,6 +548,77 @@ ul li {
     }
 }
 
+/* Tecnologia */
+
+.technologies {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    /* background: linear-gradient(to right, #1f1f1f, #111); */
+    border-radius: 20px;
+    margin: 3rem auto;
+    max-width: 1200px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    line-height: 1.7;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.light .technologies {
+    background: white;
+}
+
+body.light .technologies h2 {
+    color: black;
+}
+
+
+
+.technologies:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 8px 25px rgba(0, 255, 204, 0.3);
+}
+
+
+.technologies h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.tech-item img {
+    width: 60px;
+    height: 60px;
+}
+
+.tech-item p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.tech-item:hover {
+    transform: scale(1.1);
+}
+
+
+
 /* contacto */
 
 .contacto {
@@ -747,10 +819,11 @@ footer a {
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  align-items: stretch; /* hace que todas las cards se igualen */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    align-items: stretch;
+    /* hace que todas las cards se igualen */
 
 }
 
@@ -763,15 +836,16 @@ footer a {
 
 
 .project-card {
-      background: #111; /* o #000 si preferís */
-  color: white;
-  min-height: 450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: 12px;
-  padding: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+    /* o #000 si preferís */
+    color: black;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
