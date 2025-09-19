@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
             proyect2:"Aplicación web en JavaScript para cálculo de plazos fijos y consulta de información financiera.",
             proyect3:"Plataforma de comercio electrónico desarrollada con React y consumo de API.",
             proyect4:"API y sistema de gestión de productos con carritos de compra desarrollado con Node.js, Express, MongoDB, Handlebars y Socket.IO.",
+            proyect5:"Aplicación de consola que permite gestionar un inventario de producto.",
             code:"Código",
 
             tecno:"Tecnologías",
@@ -124,6 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
             proyect2:"JavaScript web application for calculating fixed-term deposits and viewing financial information.",
             proyect3:"E-commerce platform developed with React and API consumption.",
             proyect4:"API and product management system with shopping carts developed with Node.js, Express, MongoDB, Handlebars, and Socket.IO.",
+            proyect5:"Console application that allows you to manage product inventory.",
             code:"Code",
 
             tecno:"Technologies",
