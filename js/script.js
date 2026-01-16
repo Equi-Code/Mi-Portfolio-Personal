@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const body = document.body;
     const themeToggle = document.getElementById("theme-toggle");
@@ -261,4 +263,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     elements.forEach(el => observer.observe(el));
 });
+
+window.addEventListener("load", () => {
+  document.querySelectorAll(".motion").forEach(el => {
+    el.classList.add("show");
+  });
+});
+
+
+
 

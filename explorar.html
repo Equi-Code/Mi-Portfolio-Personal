@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portfolio personal de Ezequiel Riente. Desarrollador de software y aplicaciones móviles con experiencia en Android (Jetpack Compose, Firebase), diseño web moderno y soluciones tecnológicas. Proyectos destacados, experiencia laboral y contacto." />
+
+    <meta name="keywords"
+        content="Ezequiel Riente, portfolio, desarrollador Android, Jetpack Compose, Firebase, desarrollo de software, aplicaciones móviles, diseño web, programación, proyectos personales" />
+
+    <meta name="author" content="Ezequiel Riente" />
+
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Ezequiel Riente - Desarrollo y Consultas" />
+    <meta property="og:description"
+        content="Visitá mi portafoliop personal estilo neón oscuro y multilengueje. Desarrollo y Asesoramiento." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://equi-code.netlify.app/" />
+
+
+
+    <title>Portfolio | Ezequiel Riente</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- Iconos Font awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- Contenedor invisible para partículas -->
+    <canvas id="particles"></canvas>
+
+
+    <section class="tools">
+        <button id="theme-toggle">Modo Claro</button>
+        <label for="language-select" class="visually-hidden">Idioma</label>
+        <select id="language-select" aria-label="Seleccionar idioma">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+        </select>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <header>
+        <div class="header-container">
+            <nav class="nav">
+                <a href="#sobre-mi" data-key="navSobreMi">Sobre mí</a>
+                <a href="#experiencia" data-key="navExperiencia">Experiencia</a>
+                <a href="#estudios" data-key="navEstudios">Estudios</a>
+                <a href="#proyectos" data-key="navProyectos">Proyectos</a>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div>
+            <section id="sobre-mi" class="about fade-in">
+                <h2>
+                    <i class="fas fa-user"></i>
+                    <span data-key="sobreMi">Sobre mí</span>
+                </h2>
+
+                <div class="textSobreMi">
+                    <p data-key="aboutP1">
+                        Soy un <strong>Desarrollador Front-End</strong> apasionado por transformar ideas en experiencias
+                        digitales únicas.
+                        Mi objetivo es crear <em>sitios web modernos, accesibles y fáciles de usar</em>, combinando
+                        creatividad con
+                        código limpio y funcional.
+                    </p>
+                    <p data-key="aboutP2">
+                        Manejo con soltura tecnologías como <strong>HTML, CSS, JavaScript y frameworks modernos
+                            como React, Angular y Vue</strong>, lo que me permite adaptar cada proyecto a las
+                        necesidades específicas de mis clientes.
+                    </p>
+                    <p data-key="aboutP3">
+                        Además, disfruto del proceso de aprendizaje continuo: siempre busco estar a la
+                        vanguardia de las tendencias en <em>diseño web, UX/UI y desarrollo</em>.
+                        Mi meta no es solo programar sitios, sino construir
+                        <strong>experiencias digitales que conecten con las personas</strong>.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <section id="experiencia" class="timeline-section fade-in">
+            <h2><i class="fas fa-briefcase"></i> <span data-key="experiencia">Experiencia</span></h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="timeline-content">
+                        <h3 data-key="experienciah1">Proyecto Freelance - Desarrollo Web</h3>
+                        <span class="date" data-key="experienciaaño">2024 - Presente</span>
+                        <p data-key="experienciap1">Diseño y desarrollo de sitios web modernos y optimizados, aplicando
+                            tecnologías como HTML,
+                            CSS, JavaScript y frameworks actuales.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-university"></i></div>
+                    <div class="timeline-content">
+                        <h3 data-key="experienciah2">Oficial Sr. de Negocios - Banco de Valores</h3>
+                        <span class="date">2010 - 2023</span>
+                        <p data-key="experienciap2">Gestión de carteras de inversión, asesoramiento financiero y
+                            análisis de mercado como agente
+                            bursátil.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sección Estudios -->
+        <section id="estudios" class="certificados fade-in">
+            <h2><i class="fas fa-graduation-cap"></i> <span data-key="estudios">Estudios</span></h2>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-code"></i>
+                    <a href="./certificados/Certificado Carrera.png" target="_blank">Carrera de Desarrollo
+                        Front-End React</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <a href="./certificados/Front_-_Certificacin .pdf" target="_blank">Front End -
+                        JavaScript</a>
+                </li>
+
+                <li>
+                    <i class="fa-brands fa-python"></i>
+                    <a href="./certificados/Diploma_TT.pdf" target="_blank">Iniciacion a la Programacion con
+                        Python</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-database"></i>
+                    <a href="./certificados/Certificado Desarrollo Web.png" target="_blank">Curso Desarrollo
+                        Web</a>
+                </li>
+
+            </ul>
+        </section>
+
+        <section id="proyectos" class="proyects fade-in">
+            <h2><i class="fas fa-folder-open"></i> <span data-key="proyectos">Proyectos</span></h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>OESTECH</h3>
+                    <img src="./img/Oestech.png" alt="Portfolio Web" class="project-img">
+
+                    <p data-key="proyect1">Diseño y desarrollo de mi portfolio personal.</p>
+                    <!-- <div class="project-links">
+                        <a href="https://equi-code.github.io/OESTECH/" target="_blank" rel="noopener noreferrer"
+                            class="btn-icon">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="https://github.com/Equi-Code/OESTECH.git" target="_blank" rel="noopener noreferrer"
+                            class="btn-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div> -->
+                    <div class="project-links">
+                        <a href="https://equi-code.github.io/OESTECH/" target="_blank" rel="noopener noreferrer"
+                            class="btn-project">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                        <a href="https://github.com/Equi-Code/OESTECH.git" target="_blank" rel="noopener noreferrer"
+                            class="btn-project">
+                            <i class="fab fa-github"></i> <span data-key="code">Código</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>COTIZACIONES</h3>
+                    <img src="./img/Cotizaciones.png" alt="Portfolio Web" class="project-img">
+
+                    <p data-key="proyect2">Aplicación web en JavaScript para cálculo de plazos fijos y consulta de
+                        información financiera.</p>
+                    <div class="project-links">
+                        <a href="https://equi-code.github.io/bagriecotizaciones/" target="_blank"
+                            rel="noopener noreferrer" class="btn-project">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                        <a href="https://github.com/Equi-Code/bagriecotizaciones.git" target="_blank"
+                            rel="noopener noreferrer" class="btn-project">
+                            <i class="fab fa-github"></i> <span data-key="code">Código</span>
+                        </a>
+                    </div>
+
+
+                    <!-- <div class="project-links">
+                        <a href="https://equi-code.github.io/bagriecotizaciones/" target="_blank"
+                            rel="noopener noreferrer" class="btn-icon">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="https://github.com/Equi-Code/bagriecotizaciones.git" target="_blank"
+                            rel="noopener noreferrer" class="btn-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>-->
+                </div>
+
+                <div class="project-card">
+                    <h3>BAGRIE SHOP</h3>
+                    <img src="./img/BagrieShop.png" alt="Portfolio Web" class="project-img">
+
+                    <p data-key="proyect3">Plataforma de comercio electrónico desarrollada con React y consumo de API.
+                    </p>
+                    <!-- <div class="project-links">
+                        <a href="https://bagrieshop.netlify.app/" target="_blank" rel="noopener noreferrer"
+                            class="btn-icon">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="https://github.com/Equi-Code/proyecto-bagrie.git" target="_blank"
+                            rel="noopener noreferrer" class="btn-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div> -->
+                    <div class="project-links">
+                        <a href="https://bagrieshop.netlify.app/" target="_blank" rel="noopener noreferrer"
+                            class="btn-project">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                        <a href="https://github.com/Equi-Code/proyecto-bagrie.git" target="_blank"
+                            rel="noopener noreferrer" class="btn-project">
+                            <i class="fab fa-github"></i> <span data-key="code">Código</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="project-card">
+                    <h3>E-commerce Esol</h3>
+                    <img src="./img/EsolShop.png" alt="Portfolio Web" class="project-img">
+                    <p data-key="proyect4"> API y sistema de gestión de productos con carritos de compra desarrollado
+                        con Node.js, Express, MongoDB, Handlebars y Socket.IO.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Equi-Code/Proyecto-Final-Esol.git" target="_blank"
+                            rel="noopener noreferrer" class="btn-project">
+                            <i class="fab fa-github"></i><span data-key="code">Código</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Gestión de Productos APP</h3>
+                    <img src="./img/python.png" alt="Portfolio Web" class="project-img">
+                    <p data-key="proyect5"> Aplicación de consola que permite gestionar un inventario de producto.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Equi-Code/Gestion-de-Productos.git" target="_blank"
+                            rel="noopener noreferrer" class="btn-project">
+                            <i class="fab fa-github"></i><span data-key="code">Código</span>
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- Sección Tecnologías -->
+        <section id="tecnologias" class="technologies fade-in">
+            <h2><i class="fas fa-cogs"></i>
+                <span data-key="tecno">Tecnologías</span>
+            </h2>
+
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                        alt="HTML5" />
+                    <p>HTML5</p>
+                </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+                    <p>CSS3</p>
+                </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript" />
+                    <p>JavaScript</p>
+                </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="Node.js" />
+                    <p>Node.js</p>
+                </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+                    <p>Java</p>
+                </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python" />
+                    <p>Python</p>
+                </div>
+
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg"
+                        alt="Android Studio" />
+                    <p>Android Studio</p>
+                </div>
+
+
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg"
+                        alt="Vercel" />
+                    <p>Vercel</p>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+
+        <section class="contacto">
+            <h2 data-key="contactTitle">¡Envíame un mensaje!</h2>
+            <p data-key="contactIntro">¿Tienes alguna pregunta o propuesta, o simplemente quieres saludar? ¡Adelante!
+            </p>
+
+            <form action="https://formspree.io/f/xgvlpbno" method="POST" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name" data-key="labelName">Tu nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Ingresar tu nombre"
+                            data-placeholder="phName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-key="labelEmail">Correo Electronico</label>
+                        <input type="email" id="email" name="email"
+                            placeholder="Introduce tu dirección de correo electrónico" data-placeholder="phEmail">
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label for="message" data-key="labelMessage">Mensaje</label>
+                    <textarea id="message" name="message" placeholder="Hola, necesito un diseño......"
+                        data-placeholder="phMessage" required></textarea>
+                </div>
+                <button type="submit" class="btn-shoot" data-key="btnShoot">Enviar →</button>
+            </form>
+        </section>
+
+
+    </main>
+
+    <!-- Contenedor de botones flotantes -->
+    <div class="btn-float-container">
+        <a href="https://wa.me/+5491139259252" target="_blank" class="btn-float whatsapp" rel="noopener noreferrer"
+            title="whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#top" class="btn-float up" title="iconowhat">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+
+
+
+    <footer>
+        <p>© 2025 Ezequiel Riente - <span data-key="rights"> Todos los derechos reservados.</span></p>
+
+        <div class="footer-social">
+            <p data-key="followMe">Seguime para ver mi día a día como desarrollador y tips de código.</p>
+            <a href="./avisoLegal.html" target="_blank"><span data-key="notice">| Aviso Legal |</span></a>
+            <a href="https://www.linkedin.com/in/ezequielnicolasriente/" target="_blank" rel="noopener noreferrer"
+                title="linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Equi-Code" target="_blank" rel="noopener noreferrer" title="github"><i
+                    class="fab fa-github"></i></a>
+            <a href="mailto:ezequielrientecode@gmail.com" rel="noopener noreferrer" title="mailto"><i
+                    class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/equi_code/" target="_blank" rel="noopener noreferrer"
+                title="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#contacto" title="contacto"><i class="fas fa-user"></i></a>
+        </div>
+    </footer>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/particulas.js"></script>
+
+</body>
+
+</html>
